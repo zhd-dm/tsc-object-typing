@@ -13,7 +13,7 @@
  *     };
  * }
  *
- * `const keys = Object.keys() as ObjKeys<IUser>;` // keys - 'name' | 'age' | 'address'
+ * `const keys = Object.keys(someUser) as ObjKeys<IUser>;` // keys - 'name' | 'age' | 'address'
  */
 
-export type ObjKeys<Obj> = (keyof Obj)[];
+export type ObjKeys<Obj> = [(keyof Obj)];

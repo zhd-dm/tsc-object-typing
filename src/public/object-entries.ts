@@ -13,7 +13,7 @@
  *     };
  * }
  *
- * `const entries = Object.entries() as ObjEntries<IUser>;`
+ * `const entries = Object.entries(someUser) as ObjEntries<IUser>;`
  */
 
 export type ObjEntries<Obj> = {
